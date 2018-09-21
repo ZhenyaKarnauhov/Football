@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Football</string>
+    <string name="Score_Madrid">0</string>
+    <string name="Score_Barselona">0</string>
+    <string name="zero_btn">Сброс</string>
+    <string name="TeamMadrid">Real Madrid</string>
+    <string name="TeamBarselona">Barselona</string>
+    <string name="Score">Счёт</string>
+    <string name="Colon">:</string>
+</resources>

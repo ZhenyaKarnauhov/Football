@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+ >
+    <!-- Эмблемы команд -->
+    <ImageView
+        android:id="@+id/Image_Madrid"
+        android:layout_marginTop="30px"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_marginLeft="60px"
+        android:src="@drawable/madrid"/>
+
+    <ImageView
+        android:id="@+id/Image_Barselona"
+        android:layout_marginTop="30px"
+        android:layout_width="300px"
+        android:layout_height="300px"
+        android:layout_toRightOf="@+id/Image_Madrid"
+        android:src="@drawable/barsi"/>
+
+    <!-- Слово "Счёт" -->
+    <TextView
+        android:layout_marginTop="330px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Score"
+        android:textSize="@dimen/Score"
+        />
+
+    <!-- Двоеточие -->
+    <TextView
+        android:layout_marginTop="445px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/Colon"
+        android:textSize="@dimen/size_team"
+        />
+
+    <!-- Кнопка счёта Риал Мадрид -->
+
+    <TextView
+        android:id="@+id/ScoreMadrid"
+        android:layout_marginTop="400px"
+        android:layout_marginLeft="90px"
+        android:layout_width="@dimen/oval_wight"
+        android:layout_height="@dimen/oval_height"
+        android:background="@drawable/ground"
+        android:textSize="@dimen/size_team"
+        android:gravity="center"
+        android:onClick="onClickBtnMadrid"
+        android:text="@string/Score_Madrid" />
+
+    <!-- Кнопка счёта Барселоны -->
+
+    <TextView
+        android:id="@+id/ScoreBarselona"
+        android:layout_marginTop="400px"
+        android:layout_marginLeft="40px"
+        android:layout_toRightOf="@+id/ScoreMadrid"
+        android:layout_width="@dimen/oval_wight"
+        android:layout_height="@dimen/oval_height"
+        android:background="@drawable/ground"
+        android:gravity="center"
+        android:onClick="onClickBtnBarselona"
+        android:textSize="@dimen/size_team"
+        android:text="@string/Score_Barselona" />
+
+
+    <!-- Название команды под счётом (Мадрид) -->
+    <Button
+        android:id="@+id/TeamMadrid"
+        android:layout_marginTop="650px"
+        android:layout_marginLeft="50px"
+        android:layout_width="@dimen/btnTeam_wight"
+        android:layout_height="@dimen/btnTeam_height"
+        android:gravity="center"
+        android:text="@string/TeamMadrid"/>
+
+    <!-- Название команды под счётом (Барселона) -->
+    <Button
+        android:id="@+id/TeamBarselona"
+        android:layout_marginTop="650px"
+        android:layout_marginLeft="15px"
+        android:layout_toRightOf="@+id/TeamMadrid"
+        android:layout_width="@dimen/btnTeam_wight"
+        android:layout_height="@dimen/btnTeam_height"
+        android:gravity="center"
+        android:text="@string/TeamBarselona"
+
+        />
+
+    <!-- Обнуление счёта команд -->
+
+    <Button
+        android:id="@+id/Zero"
+        android:layout_marginTop="800px"
+        android:layout_marginLeft="160px"
+        android:layout_width="@dimen/btnZero_wight"
+        android:layout_height="@dimen/btnZero_height"
+        android:background="@color/colorZero"
+        android:onClick="ZeroButton"
+        android:gravity="center"
+        android:textSize="@dimen/txt_size"
+        android:text="@string/zero_btn" />
+</RelativeLayout>

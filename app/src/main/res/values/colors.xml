@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#003901</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorBarselona">#FF4081</color>
+    <color name="colorMadrid">#bec0f5</color>
+    <color name="colorZero">#dbdbdb</color>
+</resources>
