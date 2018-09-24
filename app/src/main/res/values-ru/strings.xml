@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="app_name">Футбол</string>
+<string name="Score_Madrid">0</string>
+<string name="Score_Barselona">0</string>
+<string name="zero_btn">Сброс</string>
+<string name="TeamMadrid">Реал Мадрид</string>
+<string name="TeamBarselona">Барселона</string>
+<string name="Score">Счёт матча</string>
+<string name="Colon">:</string>
+</resources>

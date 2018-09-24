@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //*
-    // Сохранение счёта RealMadrid при перевороте телефона
+    // Сохранение счёта RealMadrid и Barcelona при перевороте телефона
     protected void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
         outState.putInt("RealMadrid", RealMadrid);

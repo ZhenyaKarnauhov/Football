@@ -2,14 +2,15 @@
 <resources>
 
     <dimen name="fon_border">10dp</dimen>
-    <dimen name="txt_size">30sp</dimen>
-    <dimen name="size_team">50sp</dimen>
-    <dimen name="oval_wight">250px</dimen>
-    <dimen name="oval_height">250px</dimen>
-    <dimen name="btnZero_wight">200dp</dimen>
-    <dimen name="btnZero_height">70dp</dimen>
-    <dimen name="btnTeam_wight">300px</dimen>
-    <dimen name="btnTeam_height">70px</dimen>
+    <dimen name="txt_size">20sp</dimen>
+    <dimen name="size_team_oval">50sp</dimen>
+    <dimen name="oval_wight"></dimen>
+    <dimen name="oval_height"></dimen>
+    <dimen name="btnZero_wight"></dimen>
+    <dimen name="btnZero_height"></dimen>
+    <dimen name="btnTeam_wight"></dimen>
+    <dimen name="btnTeam_height"></dimen>
+    <dimen name="sizeTeamBtn">18sp</dimen>
     <dimen name="Score">35sp</dimen>
 
 </resources>
