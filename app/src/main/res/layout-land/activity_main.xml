@@ -64,7 +64,6 @@
                     android:layout_height="100dp"
                     android:background="@drawable/ground"
                     android:gravity="center"
-
                     android:text="@string/Score_Madrid"
                     android:textSize="@dimen/size_team_oval" />
 
@@ -97,8 +96,6 @@
                     android:id="@+id/TeamMadrid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:layout_marginTop="0dp"
                     android:layout_weight="1"
                     android:gravity="center"
                     android:background="@color/colorMadrid"
@@ -115,7 +112,6 @@
                     android:gravity="center"
                     android:background="@color/colorBarselona"
                     android:onClick="onClickBtnBarselona"
-
                     android:text="@string/TeamBarselona"
                     android:textSize="@dimen/sizeTeamBtn" />
             </LinearLayout>

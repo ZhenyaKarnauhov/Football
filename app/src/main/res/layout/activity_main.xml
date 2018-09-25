@@ -97,7 +97,6 @@
                     android:id="@+id/TeamMadrid"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="20dp"
                     android:layout_weight="1"
@@ -117,7 +116,6 @@
                     android:background="@color/colorBarselona"
                     android:gravity="center"
                     android:onClick="onClickBtnBarselona"
-
                     android:text="@string/TeamBarselona"
                     android:textSize="@dimen/sizeTeamBtn" />
             </LinearLayout>
@@ -138,19 +136,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Слово "Счёт" -->
 
-    <!-- Двоеточие -->
-
-    <!-- Кнопка счёта Риал Мадрид -->
-
-    <!-- Кнопка счёта Барселоны -->
-
-
-    <!-- Название команды под счётом (Мадрид) -->
-
-    <!-- Название команды под счётом (Барселона) -->
-
-    <!-- Обнуление счёта команд -->
 
 </RelativeLayout>

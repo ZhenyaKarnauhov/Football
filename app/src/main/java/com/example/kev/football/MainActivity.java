@@ -12,6 +12,20 @@ public class MainActivity extends AppCompatActivity {
     private Integer RealMadrid = 0;
     private Integer Barselona = 0;
     private String TAG;
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        TextView madridView = findViewById(R.id.ScoreMadrid);
+        madridView.setText(RealMadrid.toString());
+
+        TextView barseView = findViewById(R.id.ScoreBarselona);
+        barseView.setText(Barselona.toString());
+    }
+
+
+
     //*
     // Методы относящиеся к команде Real Madrid
 
@@ -47,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         outState.putInt("RealMadrid", RealMadrid);
         outState.putInt("Barselona", Barselona);
 
-        Log.d(TAG, "onSaveInstanceState" );
+        Log.d(String.valueOf(TAG), "onSaveInstanceState" );
     }
     protected void onRestoreInstanceState( Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
@@ -55,12 +69,10 @@ public class MainActivity extends AppCompatActivity {
             RealMadrid = savedInstanceState.getInt("RealMadrid");
         }
         if (savedInstanceState != null && savedInstanceState.containsKey("Barselona")) {
-            RealMadrid = savedInstanceState.getInt("Barselona");
+            Barselona = savedInstanceState.getInt("Barselona");
         }
-        Log.d(TAG, "onRestoreInstanceState");
+        Log.d(String.valueOf(TAG), "onRestoreInstanceState");
     }
-
-
 
 
     //*

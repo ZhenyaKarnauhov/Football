@@ -4,12 +4,6 @@
     <dimen name="fon_border">10dp</dimen>
     <dimen name="txt_size">20sp</dimen>
     <dimen name="size_team_oval">50sp</dimen>
-    <dimen name="oval_wight"></dimen>
-    <dimen name="oval_height"></dimen>
-    <dimen name="btnZero_wight"></dimen>
-    <dimen name="btnZero_height"></dimen>
-    <dimen name="btnTeam_wight"></dimen>
-    <dimen name="btnTeam_height"></dimen>
     <dimen name="sizeTeamBtn">18sp</dimen>
     <dimen name="Score">35sp</dimen>
 
