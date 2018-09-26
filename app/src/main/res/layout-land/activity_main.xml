@@ -1,135 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
  >
     <!-- Эмблемы команд -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/Image_Madrid"
-                    android:layout_width="match_parent"
-                    android:layout_height="300px"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="110dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/madrid" />
-
-                <ImageView
-                    android:id="@+id/Image_Barselona"
-                    android:layout_width="match_parent"
-                    android:layout_height="300px"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignTop="@+id/Image_Madrid"
-                    android:layout_marginEnd="101dp"
-                    android:layout_weight="1"
-                    android:src="@drawable/barsi" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginBottom="0dp"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="@string/Score"
-                android:textSize="@dimen/Score" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/ScoreMadrid"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:background="@drawable/ground"
-                    android:gravity="center"
-                    android:text="@string/Score_Madrid"
-                    android:textSize="@dimen/size_team_oval" />
-
-                <TextView
-                    android:layout_width="10dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:gravity="center"
-                    android:text="@string/Colon"
-                    android:textSize="@dimen/size_team_oval" />
-
-                <TextView
-                    android:id="@+id/ScoreBarselona"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_toRightOf="@+id/ScoreMadrid"
-                    android:background="@drawable/ground"
-                    android:gravity="center"
-                    android:text="@string/Score_Barselona"
-                    android:textSize="@dimen/size_team_oval" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/TeamMadrid"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="@color/colorMadrid"
-                    android:onClick="onClickBtnMadrid"
-                    android:text="@string/TeamMadrid"
-                    android:textSize="@dimen/sizeTeamBtn" />
-
-                <Button
-                    android:id="@+id/TeamBarselona"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@+id/TeamMadrid"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:background="@color/colorBarselona"
-                    android:onClick="onClickBtnBarselona"
-                    android:text="@string/TeamBarselona"
-                    android:textSize="@dimen/sizeTeamBtn" />
-            </LinearLayout>
-
-            <Button
-                android:id="@+id/Zero"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_alignParentStart="true"
-                android:background="@color/colorZero"
-                android:gravity="center"
-                android:onClick="ZeroButton"
-                android:text="@string/zero_btn"
-                android:textSize="@dimen/txt_size" />
-
-        </LinearLayout>
-    </ScrollView>
 
     <!-- Слово "Счёт" -->
 
@@ -146,4 +21,128 @@
 
     <!-- Обнуление счёта команд -->
 
-</RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Score"
+            android:textSize="@dimen/Score" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/Image_Madrid"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/madrid" />
+
+            <TextView
+                android:id="@+id/ScoreMadrid"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/ground"
+                android:gravity="center"
+                android:text="@string/Score_Madrid"
+                android:textSize="@dimen/size_team_oval" />
+
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/Colon"
+                android:textSize="@dimen/size_team_oval" />
+
+            <TextView
+                android:id="@+id/ScoreBarselona"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/ScoreMadrid"
+                android:background="@drawable/ground"
+                android:gravity="center"
+                android:text="@string/Score_Barselona"
+                android:textSize="@dimen/size_team_oval" />
+
+            <ImageView
+                android:id="@+id/Image_Barselona"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/Image_Madrid"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:src="@drawable/barsi" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/TeamMadrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:background="@color/colorMadrid"
+                android:gravity="center"
+                android:onClick="onClickBtnMadrid"
+                android:text="@string/TeamMadrid"
+                android:textSize="@dimen/sizeTeamBtn" />
+
+            <Button
+                android:id="@+id/TeamBarselona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/TeamMadrid"
+                android:layout_weight="1"
+                android:background="@color/colorBarselona"
+                android:gravity="center"
+                android:onClick="onClickBtnBarselona"
+                android:text="@string/TeamBarselona"
+                android:textSize="@dimen/sizeTeamBtn" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Zero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorZero"
+            android:gravity="center"
+            android:onClick="ZeroButton"
+            android:text="@string/zero_btn"
+            android:textSize="@dimen/txt_size" />
+
+    </LinearLayout>
+
+</LinearLayout>
