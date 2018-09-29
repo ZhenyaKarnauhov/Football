@@ -4,22 +4,6 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
  >
-    <!-- Эмблемы команд -->
-
-    <!-- Слово "Счёт" -->
-
-    <!-- Двоеточие -->
-
-    <!-- Кнопка счёта Риал Мадрид -->
-
-    <!-- Кнопка счёта Барселоны -->
-
-
-    <!-- Название команды под счётом (Мадрид) -->
-
-    <!-- Название команды под счётом (Барселона) -->
-
-    <!-- Обнуление счёта команд -->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -29,10 +13,6 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginBottom="0dp"
-            android:layout_weight="1"
             android:gravity="center"
             android:text="@string/Score"
             android:textSize="@dimen/Score" />
@@ -47,10 +27,7 @@
                 android:id="@+id/Image_Madrid"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
                 android:layout_marginStart="20dp"
-                android:layout_weight="1"
                 android:src="@drawable/madrid" />
 
             <TextView
@@ -59,7 +36,6 @@
                 android:layout_height="90dp"
                 android:background="@drawable/ground"
                 android:gravity="center"
-                android:text="@string/Score_Madrid"
                 android:textSize="@dimen/size_team_oval" />
 
             <TextView
@@ -78,17 +54,14 @@
                 android:layout_toRightOf="@+id/ScoreMadrid"
                 android:background="@drawable/ground"
                 android:gravity="center"
-                android:text="@string/Score_Barselona"
                 android:textSize="@dimen/size_team_oval" />
 
             <ImageView
                 android:id="@+id/Image_Barselona"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:layout_alignParentEnd="true"
                 android:layout_alignTop="@+id/Image_Madrid"
                 android:layout_marginEnd="20dp"
-                android:layout_weight="1"
                 android:src="@drawable/barsi" />
 
         </LinearLayout>
@@ -106,7 +79,6 @@
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
-                android:layout_weight="1"
                 android:background="@color/colorMadrid"
                 android:gravity="center"
                 android:onClick="onClickBtnMadrid"
@@ -121,7 +93,6 @@
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/TeamMadrid"
-                android:layout_weight="1"
                 android:background="@color/colorBarselona"
                 android:gravity="center"
                 android:onClick="onClickBtnBarselona"
@@ -133,8 +104,6 @@
             android:id="@+id/Zero"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentStart="true"
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:background="@color/colorZero"
