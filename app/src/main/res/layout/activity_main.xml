@@ -24,7 +24,7 @@
                     android:id="@+id/Image_Madrid"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginLeft="0dp"
                     android:src="@drawable/madrid" />
 
                 <ImageView

@@ -20,6 +20,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
 
@@ -27,7 +28,7 @@
                 android:id="@+id/Image_Madrid"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="110dp"
                 android:src="@drawable/madrid" />
 
             <TextView
@@ -70,13 +71,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:orientation="horizontal">
 
             <Button
                 android:id="@+id/TeamMadrid"
-                android:layout_width="match_parent"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
+                android:layout_marginLeft="160dp"
                 android:layout_marginRight="15dp"
                 android:layout_marginTop="15dp"
                 android:background="@color/colorMadrid"
@@ -87,7 +89,7 @@
 
             <Button
                 android:id="@+id/TeamBarselona"
-                android:layout_width="match_parent"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
