@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <dimen name="fon_border">3dp</dimen>
+    <dimen name="fon_border">10dp</dimen>
     <dimen name="txt_size">15sp</dimen>
     <dimen name="size_team_oval">50sp</dimen>
     <dimen name="sizeTeamBtn">14sp</dimen>
